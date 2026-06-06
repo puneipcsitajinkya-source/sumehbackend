@@ -13,6 +13,11 @@ export class CreateProductDto {
   @MinLength(1)
   name: string;
 
+  @IsOptional()
+  @IsString()
+  @MinLength(1)
+  hindiName?: string;
+
   @IsNumber()
   @Min(0)
   price: number;
@@ -42,6 +47,11 @@ export class UpdateProductDto {
   @IsString()
   @MinLength(1)
   name?: string;
+
+  @IsOptional()
+  @IsString()
+  @MinLength(1)
+  hindiName?: string;
 
   @IsOptional()
   @IsNumber()

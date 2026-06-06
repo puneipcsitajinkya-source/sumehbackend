@@ -8,6 +8,9 @@ export class Product {
   @Prop({ required: true, trim: true })
   name: string;
 
+  @Prop({ trim: true })
+  hindiName?: string;
+
   @Prop({ required: true, min: 0 })
   price: number;
 
